@@ -1,6 +1,3 @@
-
-<%= link_to 'All movies', root_path %>
-
 <article>
   <header>
     <h1><%= @movie.title %></h1>
@@ -21,4 +18,7 @@
   <p>
     <%= format_total_gross(@movie) %>
   </p>
-</article>
+</article> 
+
+<%= link_to "All movies", root_path %> | 
+<%= link_to "Edit Movies", edit_movie_path(@movie) %>
